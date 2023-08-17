@@ -15,3 +15,15 @@ Prompt: <input type="text" placeholder="enter image params" name="prompt" requir
 <button type="submit">Submit</button>
 
 </form>
+
+{{!-- in case we have images: --}}
+{{#if images}}
+
+<div class="img-cont">
+  {{#each images}}
+  <img src="{{ this.url }}" alt="generated image" />
+  {{/each}}
+</div>
+
+{{/if}}
+{{!-- closing the if block with /if --}}
