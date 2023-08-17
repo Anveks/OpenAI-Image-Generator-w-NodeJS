@@ -3,11 +3,11 @@ playing around with openAI API for image generation on NodeJS; simple server wit
 get your API key here:
 https://platform.openai.com/account/api-keys
 
-download openAI nodejs library here (allows you to work with ):
+download openAI nodejs library here:
 https://www.npmjs.com/package/openai
 npm install openai
 
-Tip for initializing:
+JS initializing:
 
     const { Configuration, OpenAIApi } = require("openai");
 
@@ -21,3 +21,12 @@ Tip for initializing:
       messages: [{role: "user", content: "Hello world"}],
     });
     console.log(chatCompletion.data.choices[0].message);
+
+Extra: 
+
+An article about express handlebars templates:
+https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
+
+npm handlebars:
+https://www.npmjs.com/package/express-handlebars
+
